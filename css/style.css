@@ -1,0 +1,97 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+::-webkit-scrollbar{
+    display: none;
+}
+:root{
+    --main-color:red;
+    --secondary-color: rgb(106, 0, 255);
+    --page-color:white;
+    --border-color:rgb(62, 209, 62);
+    --para-color:black;
+}
+body{
+    background-color: var(--page-color);
+}
+header{
+    padding: 0;
+    width: 100%;
+    height: 60px;
+    background-color: var(--secondary-color);
+}
+.logo{
+    color: white;
+    padding-left: 20px;
+    font-weight: bold;
+    cursor: pointer;
+}
+.logo .shirt{
+    font-size: 25px;
+}
+a{
+    display: flex;
+    text-decoration: none;
+    color:white;
+    height: 100%;
+    align-items: center;
+    padding: 10px;
+
+}
+a:hover{
+    color: var(--border-color);
+    border-bottom: 5px solid var(--border-color);
+}
+.dark , .light{
+    color: white;
+    cursor: pointer;
+}
+.dark:hover,.light:hover{
+    color: var(--border-color);
+}
+.main{
+    margin-top: 30px;
+    width: 100%;
+}
+p{
+    color: var(--para-color);
+}
+.product{
+    margin: 20px;
+    margin-left: auto;
+    margin-right: auto;
+    border-radius: 25px;
+}
+.product img{
+    border-radius: 35px;
+}
+.product p{
+    padding-left: 30px;
+}
+.old-price {
+    text-decoration: line-through;
+    font-size: 18px;
+    padding-left: 5px !important;
+}
+.price{
+    color: var(--main-color);
+    font-size: 18px;
+}
+.product button{
+    width: 60%;
+    margin-bottom: 15px;
+    border-radius: 25px;
+    border: 0;
+    background-color: var(--secondary-color);
+    font-weight: bold;
+    color: white;
+    padding: 10px;
+    transition: .3s;
+}
+.product button:hover{
+    background-color: var(--border-color);
+
+}
+
