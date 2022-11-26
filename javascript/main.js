@@ -1,10 +1,12 @@
 let dark = document.getElementById("dark");
 let light = document.getElementById("light");
 window.onload = () => {
-    document.querySelector('html').style.setProperty('--secondary-color', window.localStorage.secondaryColor);
-    document.querySelector('html').style.setProperty('--page-color', window.localStorage.pageColor);
-    document.querySelector('html').style.setProperty('--para-color', window.localStorage.paraColor);
-    document.querySelector('html').style.setProperty('--border-color', window.localStorage.hoverColor);
+    if (window.localStorage.secondaryColor !== null) {
+        document.querySelector('html').style.setProperty('--secondary-color', window.localStorage.secondaryColor);
+        document.querySelector('html').style.setProperty('--page-color', window.localStorage.pageColor);
+        document.querySelector('html').style.setProperty('--para-color', window.localStorage.paraColor);
+        document.querySelector('html').style.setProperty('--border-color', window.localStorage.hoverColor);
+    };
     if (window.localStorage.dark === 'true') {
         console.log(1);
         dark.classList.add('d-none');
