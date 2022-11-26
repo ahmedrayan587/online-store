@@ -94,4 +94,12 @@ p{
     background-color: var(--border-color);
 
 }
-
+@media (width<=576px) {
+    a{
+        font-size: 6px;
+        font-weight: bold;
+    }
+    .logo{
+        font-size: 11px;
+    }
+}
